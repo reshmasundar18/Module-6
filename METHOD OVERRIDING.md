@@ -3,12 +3,12 @@
 
 ---
 
-### AIM  
+### AIM:  
 To write a Python program to create a Parent class `Bird` and inherit two child classes `Sparrow` and `Ostrich` from the `Bird` class with the same method `flight()`. Create an object for each class and call the methods of the class which will print the name of the bird that is flying.
 
 ---
 
-### ALGORITHM
+### ALGORITHM:
 
 1. **Begin the program.**
 2. **Define the Bird class**:
@@ -31,13 +31,40 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 
 ---
 
-### PROGRAM
+### PROGRAM:
+```
+class Bird:
+    def intro(self):
+        print("There are many types of birds.")
+	
+    def flight(self):
+        print("Most of the birds can fly but some cannot.")
+
+class sparrow(Bird):
+    def  flight(self): 
+        print("Sparrows can fly.")
+	
+class ostrich(Bird):
+    def flight(self):
+        print("Ostriches cannot fly.")
+	
+obj_bird = Bird()
+obj_spr = sparrow()
+obj_ost = ostrich()
+
+obj_bird.intro()
+obj_bird.flight()
+
+obj_spr.intro()
+obj_spr.flight()
+
+obj_ost.intro()
+obj_ost.flight()
 
 ```
 
-```
+### OUTPUT:
+<img width="794" height="212" alt="image" src="https://github.com/user-attachments/assets/33d6a51f-8f0f-4a01-b08f-43d93f06b006" />
 
-### OUTPUT
-
-
-### RESULT
+### RESULT:
+This program for Parent class Bird and inherit two child classes Sparrow and Ostrich from the Bird class with the same method flight() is successfully executed.
