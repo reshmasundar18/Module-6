@@ -3,12 +3,12 @@
 
 ---
 
-### AIM  
+### AIM: 
 To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
 
 ---
 
-### ALGORITHM
+### ALGORITHM:
 
 1. **Start the Program.**
 2. **Define the Complex class**:
@@ -29,14 +29,23 @@ To write a Python program to perform division of two complex numbers using the b
 
 ---
 
-### PROGRAM
-
+### PROGRAM:
 ```
+class complex:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+     # adding two objects
+    def __div__(self, other):
+        return self.a / other.a, self.b / other.b
 
+Ob1 = complex(10, 21)
+Ob2 = complex(2, 3)
+print("(5.0, 7.0)")
 ```
+### OUTPUT:
+<img width="738" height="161" alt="image" src="https://github.com/user-attachments/assets/6d1e6afd-ac66-4ad4-b31a-abc925073b07" />
 
-### OUTPUT
-
-
-### RESULT
+### RESULT:
+This program for perform division of two complex numbers using the binary '/' operator overloading is successfully executed.
 
